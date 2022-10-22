@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Javeed.inc</groupId>
+  <artifactId>flipkart_app</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0.1-SNAPSHOT</version>
+  <name>flipkart_app</name>
+  <url>http://maven.apache.org</url>  
+<distributionManagement>  
+	<repository>
+		<id>nexus</id>
+		<name>Javeed IT Releases Nexus Repo</name>
+		<url>http://15.206.74.117:8081/repository/javeedit-release-repo/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>Javeed IT Snapshots Nexus Repo</name>
+		<url>http://15.206.74.117:8081/repository/javeedit-snapshot-repo/</url>
+	</snapshotRepository>	
+</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<url>http://15.206.74.117:8081/repository/javeedit-remote-repo/</url>
+		</repository>
+	</repositories>
+
+
+  <dependencies>
+    <dependency>
+		<groupId>inc.javeed</groupId>
+		<artifactId>pwd-utils</artifactId>
+		<version>1.0</version>
+	</dependency>
+	<dependency>
+	      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
