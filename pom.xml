@@ -8,6 +8,11 @@
   <name>flipkart_app</name>
   <url>http://maven.apache.org</url>  
 <distributionManagement>  
+	
+  <properties>
+     <maven.compiler.source>11</maven.compiler.source>
+     <maven.compiler.target>11</maven.compiler.target>
+  </properties>
 	<repository>
 		<id>nexus</id>
 		<name>Javeed IT Releases Nexus Repo</name>
